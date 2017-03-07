@@ -1,0 +1,54 @@
+{
+  "name": "techolution-assignment",
+  "version": "1.0.0",
+  "description": "Techolution sample MEAN stack assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack --progress --watch",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=4.4.0",
+    "npm": ">=3.9.5"
+  },
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "body-parser": "^1.16.0",
+    "core-js": "^2.4.1",
+    "ejs": "latest",
+    "express": "latest",
+    "mongoose": "^4.8.6",
+    "reflect-metadata": "latest",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.7.4"
+  },
+  "author": "Dastagirireddy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.43",
+    "@types/node": "^7.0.5",
+    "clean-webpack-plugin": "^0.1.15",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
+    "node-sass": "^4.4.0",
+    "sass-loader": "^4.1.1",
+    "ts-loader": "^2.0.0",
+    "typescript": "latest",
+    "webpack": "^1.14.0"
+  }
+}

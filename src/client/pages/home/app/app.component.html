@@ -1,0 +1,16 @@
+<div>
+    <h1 class="text-center techo-header">Techolution Assignment</h1>
+    <div class="container">
+        <techo-select [toptions]="options" (onselect)="onSelectCar($event)" ttext="name">
+            Select car type
+        </techo-select>
+        <div class="marginT20" *ngIf="car">
+            <techo-select [toptions]="car.models" (onselect)="onSelectModel($event)" ttext="name">
+                Select car model
+            </techo-select>
+            <p class="marginT20" *ngIf="model">
+                <img class="my-car" src="img/{{model?.name}}.jpg" alt="{{model?.name}}"> {{model?.description}}
+            </p>
+        </div>
+    </div>
+</div>

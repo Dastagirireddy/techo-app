@@ -1,0 +1,18 @@
+db:
+    image: mongo
+    volumes:
+        - mongodbdata:/data/db
+    ports:
+        - "27017:27017"
+techo-app:
+    image: dastagirireddy/techo-app
+    links:
+        - db
+    volumes:
+        - .:/techo-app
+    environment: 
+      - MONGODB=mongodb://db/techodb
+      - VIRTUAL_HOST=test.rdasta.com
+    ports:
+        - "3000:3000"
+    restart: always
